@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>JDC면세점 입점 신청 시스템</title>
+    <link href="source/css/boxicons.css" rel="stylesheet" />
+    <link href="source/css/swiper-bundle.css" rel="stylesheet" />
+    <link href="source/css/style.css" rel="stylesheet" />
+
+    <!-- javaScript -->
+    <script src="source/js/jquery-3.5.1.min.js"></script>
+    <script src="source/js/swiper-bundle.js"></script>
+    <script src="source/js/common.js"></script>
+  </head>
+
+  <body class="sub">
+    <!-- S:skip_navi -->
+    <div class="skip_navi">
+      <a class="sr-only sr-only-focusable" href="#header">메뉴 바로가기</a>
+      <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a>
+      <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a>
+    </div>
+    <!-- E:skip_navi -->
+    <!-- S:header -->
+
+    <header id="header" class="home">
+      <div class="container">
+        <h1><a href="/" class="home">JDC면세점 입점 신청 시스템</a></h1>
+
+        <div class="header-box">
+          <div class="button">
+            <button class="login">로그인</button>
+            <!-- <button class="login on">로그아웃</button> -->
+            <button class="main-menu">메뉴토글</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- E:header -->
+
+    <!-- S:main_menu -->
+    <nav id="main-menu">
+      <div class="menu-box">
+        <ul class="menu-list">
+          <li>
+            <h2>
+              <a href="/">공지사항</a>
+            </h2>
+          </li>
+          <li>
+            <h2>
+              <a href="/">입·퇴점 안내 </a>
+            </h2>
+          </li>
+          <li>
+            <h2>
+              <a href="/">입점제안</a>
+            </h2>
+          </li>
+          <li>
+            <h2>
+              <a href="/">상시제안</a>
+            </h2>
+          </li>
+        </ul>
+
+        <button class="close">메뉴닫기</button>
+      </div>
+    </nav>
+    <!-- E:main_menu -->
+
+    <!-- S:mainContent -->
+    <div id="content" class="sub">
+      <section class="edit">
+        <div class="container">
+          <h3>입접제안</h3>
+
+          <div class="edit-write">
+            <h4>입점 소개</h4>
+            <p class="vital"><span>*</span>는 필수 입력입니다.</p>
+
+            <div class="table">
+              <ul>
+                <li class="two">
+                  <div class="left">
+                    <strong>상호(법인명)</strong>
+                    <div class="input-box">JJ유통물산</div>
+                  </div>
+                  <div class="right">
+                    <strong>사업자등록번호</strong>
+                    <div class="input-box">123-45-67890</div>
+                  </div>
+                </li>
+                <li class="two">
+                  <div class="left">
+                    <strong>연락처</strong>
+                    <div class="input-box">02-7583-6521</div>
+                  </div>
+                  <div class="right">
+                    <strong>JDC 면세점<br />입점 여부</strong>
+                    <div class="input-box">YES</div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong
+                      ><label for="item">품목명<span>*</span></label></strong
+                    >
+                    <div class="input-box">
+                      <input class="item" type="text" id="item" placeholder="품목명을 입력하세요." />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong
+                      ><label for="brand">브랜드명<span>*</span></label></strong
+                    >
+                    <div class="input-box">
+                      <input class="brand" type="text" id="brand" placeholder="브랜드명을 입력하세요." />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong>
+                      <label for="">입점 제안서<span>*</span></label>
+                    </strong>
+                    <div class="input-box">
+                      <ul class="file">
+                        <li>
+                          <a class="down" href="#">입접 제안서 양식 다운로드</a>
+                        </li>
+                        <li>
+                          <div class="file-down">
+                            <label for="file">파일 선택</label>
+                            <input type="file" name="file" id="file" />
+                            <span>‘파일 선택’을 눌러 파일을 업로드해주세요. 파일 업로드시 →</span>
+                            <a class="file-list" href="">입점 제안서.hwp</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong>
+                      <label for="">제안 제안서<span>*</span></label>
+                    </strong>
+                    <div class="input-box">
+                      <ul class="file">
+                        <li>
+                          <a class="down" href="#">제안 제안서 양식 다운로드</a>
+                        </li>
+                        <li>
+                          <div class="file-down">
+                            <label for="file2">파일 선택</label>
+                            <input type="file" name="file2" id="file2" />
+                            <span>‘파일 선택’을 눌러 파일을 업로드해주세요. 파일 업로드시 →</span>
+                            <a class="file-list" href="">제안 요약서.hwp</a>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong>
+                      <label for="">필수 제출서류<span>*</span></label>
+                    </strong>
+                    <div class="input-box">
+                      <ul class="document">
+                        <li>① 사업자등록증<span>*</span></li>
+                        <li>② 인감증명서<span>*</span></li>
+                        <li>③ 현재 법인 등기부등본(말소사항 포함)<span>*</span></li>
+                        <li>④ 라이센스 권리증 또는 브랜드 사용 계약서 등(국문번역서)<span>*</span></li>
+                        <li>⑤ 사업자격제한 부존재 사실확인서<span>*</span></li>
+                        <p>※ ①~⑤ 파일은 압축하여 하나의 파일로 업로드 요망</p>
+                        <div class="file-down">
+                          <label for="file2">파일 선택</label>
+                          <input type="file" name="file2" id="file2" />
+                          <span>‘파일 선택’을 눌러 파일을 업로드해주세요. 파일 업로드시 →</span>
+                          <a class="file-list" href="">JJ유통물산_제출서류.zip</a>
+                        </div>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="btn-set">
+            <a href="">취소</a>
+            <a class="join" href="">저장</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- E:mainContent -->
+
+    <!-- S:footer -->
+    <footer id="footer">
+      <div class="container">
+        <ul class="footer-link">
+          <li>
+            <a href="https://www.jdcenter.com/privacy/protection.do" target="_blank">개인정보처리방침</a>
+          </li>
+          <li>
+            <a href="">이용약관</a>
+          </li>
+        </ul>
+
+        <address>
+          <p>(공정거래위원회 고시 제 2002-1호에 따른) 사업자등록증: 616-82-15473</p>
+          <p>(63115) 제주특별자치도 제주시 공항로 2 제주국제공항합동청사(제주지방항공청) 1층 면세사업본부</p>
+          <p>Tel : 064-740-9811 / Fax : 064-740-9907 / 개인정보관리책임자 : 영업처장 현상철</p>
+          <p class="copyright">Copyright 2016. JDCDFS. All Rights Reserved.</p>
+        </address>
+        <div class="agency">
+          <button class="agency-open">FAMILY SITE <i>화살</i></button>
+          <div class="agency-link">
+            <a href="https://www.jdcdutyfree.com/mall/main/home.do" target="_blank">JDC면세점</a>
+            <a href="https://www.jdcdutyfree.com/mall/main/home.do" target="_blank">JDC면세점</a>
+            <a href="https://www.jdcdutyfree.com/mall/main/home.do" target="_blank">JDC면세점</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- E:footer -->
+  </body>
+</html>

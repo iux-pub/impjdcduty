@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>JDC면세점 입점 신청 시스템</title>
+    <link href="source/css/boxicons.css" rel="stylesheet" />
+    <link href="source/css/swiper-bundle.css" rel="stylesheet" />
+    <link href="source/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
+
+    <!-- javaScript -->
+    <script src="source/js/jquery-3.5.1.min.js"></script>
+    <script src="source/js/swiper-bundle.js"></script>
+    <script src="source/js/common.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/ko.js"></script>
+  </head>
+
+  <body class="sub">
+    <!-- S:skip_navi -->
+    <div class="skip_navi">
+      <a class="sr-only sr-only-focusable" href="#header">메뉴 바로가기</a>
+      <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a>
+      <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a>
+    </div>
+    <!-- E:skip_navi -->
+    <!-- S:header -->
+    <header id="header" class="home">
+      <div class="container">
+        <h1><a href="/" class="home">JDC면세점 입점 신청 시스템</a></h1>
+
+        <div class="header-box">
+          <div class="button">
+            <button class="login">로그인</button>
+            <!-- <button class="login on">로그아웃</button> -->
+            <button class="main-menu">메뉴토글</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- E:header -->
+
+    <!-- S:main_menu -->
+    <nav id="main-menu">
+      <div class="menu-box">
+        <ul class="menu-list">
+          <li>
+            <h2>
+              <a href="/">공지사항</a>
+            </h2>
+          </li>
+          <li>
+            <h2>
+              <a href="/">입·퇴점 안내 </a>
+            </h2>
+          </li>
+          <li>
+            <h2>
+              <a href="/">입점제안</a>
+            </h2>
+          </li>
+          <li>
+            <h2>
+              <a href="/">상시제안</a>
+            </h2>
+          </li>
+        </ul>
+
+        <button class="close">메뉴닫기</button>
+      </div>
+    </nav>
+    <!-- E:main_menu -->
+
+    <!-- S:mainContent -->
+    <div id="content" class="sub">
+      <section class="process">
+        <div class="container">
+          <h2>상시제안</h2>
+          <div class="boardMain">
+            <div class="board-search">
+              <label for="item">품목명칭</label>
+              <select name="item" id="item">
+                <option value="">전체</option>
+                <option value="">패션</option>
+                <option value="">스카프</option>
+              </select>
+              <input class="search" type="text" placeholder="검색어를 입력하세요." />
+            </div>
+            <div class="board-day">
+              <label for="dateSelector">기간설정</label>
+              <div class="calendar">
+                <input data-input data-toggle class="selector" type="text" id="dateSelector" placeholder="날짜를 선택하세요" />
+                <i data-toggle class="selector-i">달력</i>
+              </div>
+
+              <button>검색</button>
+            </div>
+          </div>
+
+          <div class="list">
+            <ul class="list">
+              <li>
+                <!-- 클래스: check -> 확인-->
+                <a href="">
+                  <div class="box">
+                    <div class="check">
+                      <strong>선택</strong>
+                      <span><input type="checkbox" name="" id="" /></span>
+                    </div>
+                    <div class="day">
+                      <strong>등록일자</strong>
+                      <span>2025.11.31</span>
+                    </div>
+                    <div class="item">
+                      <strong>품목</strong>
+                      <span>화장품</span>
+                    </div>
+                    <div class="brand">
+                      <strong>브랜드</strong>
+                      <span>A브랜드</span>
+                    </div>
+                    <div class="company">
+                      <strong>업체명</strong>
+                      <span>(주)JJ유통물산</span>
+                    </div>
+                    <div class="status">
+                      <strong>진행단계</strong>
+                      <!-- 클래스x -> 미확인 -->
+                      <!-- 클래스: check -> 확인-->
+                      <span>미확인</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <!-- 클래스: check -> 확인-->
+                <a class="hold" href="">
+                  <div class="box">
+                    <div class="check">
+                      <strong>선택</strong>
+                      <span><input type="checkbox" name="" id="" /></span>
+                    </div>
+                    <div class="day">
+                      <strong>등록일자</strong>
+                      <span>2025.10.31</span>
+                    </div>
+                    <div class="item">
+                      <strong>품목</strong>
+                      <span>향수</span>
+                    </div>
+                    <div class="brand">
+                      <strong>브랜드</strong>
+                      <span>B브랜드</span>
+                    </div>
+                    <div class="company">
+                      <strong>업체명</strong>
+                      <span>(주)JJ유통물산</span>
+                    </div>
+                    <div class="status">
+                      <strong>진행단계</strong>
+                      <!-- 클래스x -> 미확인 -->
+                      <!-- 클래스: check -> 확인-->
+                      <span class="check">확인</span>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+            <div class="btn-box">
+              <button class="new">신규등록</button>
+              <button class="check">조회</button>
+              <button class="del">삭제</button>
+              <button class="retouch">수정</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 팝업 class에 active추가 -->
+        <div class="popup">
+          <div class="box">
+            <a href="#" class="close">x</a>
+            <p><span>‘접수’</span> 단계에서는 수정이 불가능합니다.</p>
+            <button class="check">확인</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- E:mainContent -->
+
+    <!-- S:footer -->
+    <footer id="footer">
+      <div class="container">
+        <ul class="footer-link">
+          <li>
+            <a href="https://www.jdcenter.com/privacy/protection.do" target="_blank">개인정보처리방침</a>
+          </li>
+          <li>
+            <a href="">이용약관</a>
+          </li>
+        </ul>
+
+        <address>
+          <p>(공정거래위원회 고시 제 2002-1호에 따른) 사업자등록증: 616-82-15473</p>
+          <p>(63115) 제주특별자치도 제주시 공항로 2 제주국제공항합동청사(제주지방항공청) 1층 면세사업본부</p>
+          <p>Tel : 064-740-9811 / Fax : 064-740-9907 / 개인정보관리책임자 : 영업처장 현상철</p>
+          <p class="copyright">Copyright 2016. JDCDFS. All Rights Reserved.</p>
+        </address>
+        <div class="agency">
+          <button class="agency-open">FAMILY SITE <i>화살</i></button>
+          <div class="agency-link">
+            <a href="https://www.jdcdutyfree.com/mall/main/home.do" target="_blank">JDC면세점</a>
+            <a href="https://www.jdcdutyfree.com/mall/main/home.do" target="_blank">JDC면세점</a>
+            <a href="https://www.jdcdutyfree.com/mall/main/home.do" target="_blank">JDC면세점</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- E:footer -->
+  </body>
+</html>

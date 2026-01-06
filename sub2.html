@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>JDC면세점 입점 신청 시스템</title>
+    <link href="source/css/boxicons.css" rel="stylesheet" />
+    <link href="source/css/swiper-bundle.css" rel="stylesheet" />
+    <link href="source/css/style.css" rel="stylesheet" />
+
+    <!-- javaScript -->
+    <script src="source/js/jquery-3.5.1.min.js"></script>
+    <script src="source/js/swiper-bundle.js"></script>
+    <script src="source/js/common.js"></script>
+  </head>
+
+  <body class="sub">
+    <!-- S:skip_navi -->
+    <div class="skip_navi">
+      <a class="sr-only sr-only-focusable" href="#header">메뉴 바로가기</a>
+      <a class="sr-only sr-only-focusable" href="#content">본문 바로가기</a>
+      <a class="sr-only sr-only-focusable" href="#footer">푸터 바로가기</a>
+    </div>
+    <!-- E:skip_navi -->
+    <!-- S:header -->
+
+    <header id="header" class="home">
+      <div class="container">
+        <h1><a href="/" class="home">JDC면세점 입점 신청 시스템</a></h1>
+
+        <div class="header-box">
+          <div class="button">
+            <button class="login">로그인</button>
+            <!-- <button class="login on">로그아웃</button> -->
+            <button class="main-menu">메뉴토글</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- E:header -->
+
+    <!-- S:main_menu -->
+    <nav id="main-menu">
+      <div class="menu-box">
+        <ul class="menu-list">
+          <li>
+            <h2>
+              <a href="/">공지사항</a>
+            </h2>
+          </li>
+          <li>
+            <h2>
+              <a href="/">입·퇴점 안내 </a>
+            </h2>
+          </li>
+          <li>
+            <h2>
+              <a href="/">입점제안</a>
+            </h2>
+          </li>
+          <li>
+            <h2>
+              <a href="/">상시제안</a>
+            </h2>
+          </li>
+        </ul>
+
+        <button class="close">메뉴닫기</button>
+      </div>
+    </nav>
+    <!-- E:main_menu -->
+
+    <!-- S:mainContent -->
+    <div id="content" class="sub">
+      <section class="sign">
+        <div class="container">
+          <h3>회원가입</h3>
+          <div class="terms">
+            <h4>개인정보 수집 및 이용 동의서</h4>
+            <p class="text">동의하지 않으실 경우 입점신청시스템 이용이 불가합니다.</p>
+            <ul>
+              <li>
+                <strong>수집항목</strong>
+                <p>이름, 연락처, 이메일, 생년월일, 사업자등록번호</p>
+              </li>
+              <li>
+                <strong>이용목적</strong>
+                <p>입점제안 관련 협의 및 상담업무</p>
+              </li>
+              <li>
+                <strong>보유·이용기간</strong>
+                <p class="last">관련 법령의 규정에 따라 개인정보를 보존할 의무가 있는 경우를 제외하고 개인정보 수집 및 이용 목적이 달성된 후에는 지체없이 파기</p>
+              </li>
+            </ul>
+            <div class="check-box">
+              <p class="check-text">> 본인은 개인정보 수집 및 이용에 관한 위 내용을 모두 이해하였으며 이에 동의합니다.</p>
+              <div class="sign-check">
+                <input id="agree" type="radio" name="check" />
+                <label for="agree">동의</label>
+                <input type="radio" name="check" id="disagree" checked />
+                <label for="disagree">동의하지 않음</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="sign-write">
+            <h4>기본 정보 입력</h4>
+            <p class="vital"><span>*</span>는 필수 입력입니다.</p>
+
+            <div class="table">
+              <ul>
+                <li class="two">
+                  <div class="left">
+                    <strong
+                      ><label for="co">상호(법인명)<span>*</span></label></strong
+                    >
+                    <div class="input-box">
+                      <input type="text" id="co" />
+                    </div>
+                  </div>
+                  <div class="right">
+                    <strong
+                      ><label for="num">사업자등록번호<span>*</span></label></strong
+                    >
+                    <div class="input-box">
+                      <input class="num01" id="num" type="text" /> <span>-</span> <input class="num02" type="text" /> <span>-</span>
+                      <input class="num03" type="text" />
+                      <button class="check">중복 확인</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="two">
+                  <div class="left">
+                    <strong
+                      ><label for="ceo">대표자<span>*</span></label></strong
+                    >
+                    <div class="input-box">
+                      <input type="text" id="ceo" />
+                    </div>
+                  </div>
+                  <div class="right">
+                    <strong><label for="birth">생년월일</label></strong>
+                    <div class="input-box">
+                      <input type="text" id="birth" placeholder="생년월일 8자리 입력 (ex:19780102)" />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong
+                      ><label for="address">주소<span>*</span></label></strong
+                    >
+                    <div class="input-box">
+                      <input class="code" type="text" readonly placeholder="우편번호" />
+                      <button>우편번호 찾기</button>
+                      <p class="address">읍/면/동 이름을 입력하고 [우편번호 찾기] 버튼을 눌러주세요.</p>
+                      <input class="address" type="text" readonly />
+                      <input class="address" type="text" id="address" placeholder="상세주소" />
+                    </div>
+                  </div>
+                </li>
+                <li class="two">
+                  <div class="left">
+                    <strong
+                      ><label for="phon">연락처<span>*</span></label></strong
+                    >
+                    <div class="input-box">
+                      <input class="phon" type="text" id="phon" /> <span>-</span> <input class="phon" type="text" id="phon" /> <span>-</span>
+                      <input class="phon" type="text" id="phon" />
+                    </div>
+                  </div>
+                  <div class="right">
+                    <strong><label for="FAX">FAX</label></strong>
+                    <div class="input-box">
+                      <input class="phon" type="text" id="FAX" /> <span>-</span> <input class="phon" type="text" id="FAX" /> <span>-</span>
+                      <input class="phon" type="text" id="FAX" />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong
+                      ><label for="id">아이디<span>*</span></label></strong
+                    >
+                    <div class="input-box">
+                      <input class="id" type="text" id="id" />
+                      <button>아이디 중복 확인</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="two">
+                  <div class="left">
+                    <strong
+                      ><label for="password">비밀번호<span>*</span></label></strong
+                    >
+                    <div class="input-box">
+                      <input type="password" id="password" />
+                      <p>영문, 숫자, 특수문자 2개 이상 (_@&+!#$%^-()’~?[];:.,) 조합 8~20자</p>
+                    </div>
+                  </div>
+                  <div class="right check">
+                    <strong
+                      ><label for="passwordcheck">비밀번호 확인<span>*</span></label></strong
+                    >
+                    <div class="input-box">
+                      <input type="password" id="passwordcheck" />
+                    </div>
+                  </div>
+                </li>
+                <li class="two">
+                  <div class="left">
+                    <strong
+                      ><label for="manager">담당자 성함<span>*</span></label></strong
+                    >
+                    <div class="input-box">
+                      <input type="text" id="manager" />
+                    </div>
+                  </div>
+                  <div class="right">
+                    <strong><label for="position">직위</label></strong>
+                    <div class="input-box">
+                      <input type="text" id="position" />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong
+                      ><label for="managerPhon">담당자 연락처<span>*</span></label></strong
+                    >
+                    <div class="input-box"><input class="phon" id="managerPhon" type="text" /> <span>-</span> <input class="phon" type="text" /> <span>-</span> <input class="phon" type="text" /></div>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <strong
+                      ><label for="mail">이메일<span>*</span></label></strong
+                    >
+                    <div class="input-box">
+                      <input class="mail" type="text" id="mail" /> <span>@</span> <input class="mail" type="text" />
+                      <p>입점상담 및 입점제안 결과가 이메일로 통보되므로 정확히 기재해 주시기 바랍니다.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="file">
+            <h4>첨부파일 등록</h4>
+            <div class="file-box">
+              <h5>사업자등록증 첨부<span>*</span></h5>
+              <label for="file">파일 선택</label>
+              <input type="file" name="" id="file" />
+              <span>‘파일 선택’을 눌러 파일을 업로드해주세요. 파일 업로드시 →</span>
+              <a href="">사업자등록증.pdf</a>
+            </div>
+            <ul>
+              <li>· 개인정보 수집 및 이용에 동의하셔야 회원 가입이 가능합니다.</li>
+              <li>· 입점상담 및 입점제안 결과가 이메일로 통보되므로 이메일 주소를 다시 한번 확인하시기 바랍니다.</li>
+            </ul>
+          </div>
+
+          <div class="btn-set">
+            <a href="">돌아가기</a>
+            <a class="join" href="">회원가입</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- E:mainContent -->
+
+    <!-- S:footer -->
+    <footer id="footer">
+      <div class="container">
+        <ul class="footer-link">
+          <li>
+            <a href="https://www.jdcenter.com/privacy/protection.do" target="_blank">개인정보처리방침</a>
+          </li>
+          <li>
+            <a href="">이용약관</a>
+          </li>
+        </ul>
+
+        <address>
+          <p>(공정거래위원회 고시 제 2002-1호에 따른) 사업자등록증: 616-82-15473</p>
+          <p>(63115) 제주특별자치도 제주시 공항로 2 제주국제공항합동청사(제주지방항공청) 1층 면세사업본부</p>
+          <p>Tel : 064-740-9811 / Fax : 064-740-9907 / 개인정보관리책임자 : 영업처장 현상철</p>
+          <p class="copyright">Copyright 2016. JDCDFS. All Rights Reserved.</p>
+        </address>
+        <div class="agency">
+          <button class="agency-open">FAMILY SITE <i>화살</i></button>
+          <div class="agency-link">
+            <a href="https://www.jdcdutyfree.com/mall/main/home.do" target="_blank">JDC면세점</a>
+            <a href="https://www.jdcdutyfree.com/mall/main/home.do" target="_blank">JDC면세점</a>
+            <a href="https://www.jdcdutyfree.com/mall/main/home.do" target="_blank">JDC면세점</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- E:footer -->
+  </body>
+</html>
