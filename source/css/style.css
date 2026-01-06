@@ -4170,7 +4170,7 @@ body div#content.main {
 
 @media (min-width: 1280px) {
   body div#content.main {
-    padding-bottom: 375px;
+    padding-bottom: 372px;
   }
 }
 
@@ -4267,28 +4267,36 @@ body div#content.main section.main-info div.container {
 
 body div#content.main section.main-info .main-area {
   position: absolute;
-  top: -315px;
-  left: 0;
-  padding: 0 20px;
-  width: 100%;
+  top: -300px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 90%;
+  background: #A99F8E;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 8px 20px 0px #505e744d;
+          box-shadow: 0px 8px 20px 0px #505e744d;
 }
 
 @media (min-width: 1280px) {
   body div#content.main section.main-info .main-area {
-    top: -280px;
+    top: -254px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 0;
+    left: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
 body div#content.main section.main-info .main-area .main-box {
+  position: relative;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ffffff), to(#f7f7f9));
   background: linear-gradient(180deg, #ffffff 50%, #f7f7f9 100%);
   border-radius: 30px 30px 0 30px;
   padding: 35px 30px;
-  -webkit-box-shadow: 0px 8px 20px 0px #505e744d;
-          box-shadow: 0px 8px 20px 0px #505e744d;
 }
 
 @media (min-width: 1280px) {
@@ -4341,6 +4349,7 @@ body div#content.main section.main-info .main-area .main-box .login-box .login .
 
 @media (min-width: 1280px) {
   body div#content.main section.main-info .main-area .main-box .login-box .login .login-input label {
+    font-size: 16px;
     width: 62px;
     display: inline-block;
     margin-right: 20px;
@@ -4590,8 +4599,9 @@ body div#content.main section.main-info .main-area .main-box .notice a.notice-bo
 body div#content.main section.main-info .main-area .img-box {
   width: 100%;
   height: 300px;
-  border-radius: 0 30px 30px 30px;
+  background: #fff;
   overflow: hidden;
+  border-radius: 0 0 30px 30px;
 }
 
 @media (min-width: 1280px) {
@@ -4600,12 +4610,14 @@ body div#content.main section.main-info .main-area .img-box {
     height: 560px;
     -ms-flex-negative: 0;
         flex-shrink: 0;
+    border-radius: 0 30px 30px 0;
   }
 }
 
 body div#content.main section.main-info .main-area .img-box img {
   width: 100%;
   height: 100%;
+  border-radius: 0 30px 30px 30px;
 }
 
 body div#content.sub {
@@ -6018,8 +6030,14 @@ body div#content.sub section.sign div.container div.file {
   margin-top: 40px;
 }
 
+@media (min-width: 1280px) {
+  body div#content.sub section.sign div.container div.file {
+    margin-top: 60px;
+  }
+}
+
 body div#content.sub section.sign div.container div.file .file-box {
-  margin-top: 29px;
+  margin-top: 30px;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   padding: 14px 0;
@@ -6941,7 +6959,7 @@ body div#content.sub section.process div.list div.btn-box button {
   font-size: 16px;
   font-weight: 500;
   color: #fff;
-  padding: 14px 0;
+  padding: 10.5px 0;
 }
 
 body div#content.sub section.process div.list div.btn-box button.new {
@@ -7047,7 +7065,7 @@ body div#content.sub section.edit div.container h3 {
 }
 
 body div#content.sub section.edit div.container div.edit-write {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 body div#content.sub section.edit div.container div.edit-write h4 {
@@ -7055,7 +7073,7 @@ body div#content.sub section.edit div.container div.edit-write h4 {
   font-size: 18px;
   font-weight: 600;
   color: #111111;
-  margin: 0 0 15px;
+  margin: 0 0 30px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 1fr;
