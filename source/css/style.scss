@@ -168,7 +168,9 @@ body {
       background: rgba(0, 0, 0, 0.8);
       opacity: 0;
       visibility: hidden;
-      transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+      transition:
+        opacity 0.3s ease-in-out,
+        visibility 0.3s ease-in-out;
 
       // 큰 화면에서는 모바일 메뉴만 숨김 (PC용 메뉴는 별도 처리)
       @media (min-width: 1290px) {
@@ -347,7 +349,9 @@ body {
         div.main-text {
           margin: 0 auto 15px;
           height: 600px;
-          background: linear-gradient(#00000066, #00000066), url(../images/main.png) no-repeat center / cover;
+          background:
+            linear-gradient(#00000066, #00000066),
+            url(../images/main.png) no-repeat center / cover;
           padding: 90px 44px 0;
           position: relative;
           @media (min-width: $screen-size-pc) {
@@ -419,7 +423,7 @@ body {
           left: 50%;
           transform: translateX(-50%);
           width: 90%;
-          background: #A99F8E;
+          background: #a99f8e;
           border-radius: 30px;
           box-shadow: 0px 8px 20px 0px #505e744d;
           @media (min-width: $screen-size-pc) {
@@ -434,7 +438,7 @@ body {
             background: linear-gradient(180deg, #ffffff 50%, #f7f7f9 100%);
             border-radius: 30px 30px 0 30px;
             padding: 35px 30px;
-            
+
             @media (min-width: $screen-size-pc) {
               width: 800px;
               height: 560px;
@@ -590,6 +594,87 @@ body {
                 }
               }
             }
+
+            .offer-box {
+              h3 {
+                font-size: 18px;
+                font-weight: 700;
+                color: #111;
+                margin: 0;
+                @media (min-width: $screen-size-pc) {
+                  font-size: 22px;
+                }
+                span {
+                  display: block;
+                  font-size: 14px;
+                  font-weight: 500;
+                  margin: 10px 0 0 0;
+                  @media (min-width: $screen-size-pc) {
+                    font-size: 16px;
+                    display: inline-block;
+                    margin: 0 0 0 10px;
+                  }
+                }
+              }
+              .offer {
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                @media (min-width: $screen-size-pc) {
+                  margin-top: 47px;
+                  flex-direction: row;
+                }
+                a {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  padding: 0 20px;
+                  width: 100%;
+                  height: 60px;
+                  font-size: 16px;
+                  font-weight: 500;
+                  color: #fff;
+                  border-radius: 15px;
+                  @media (min-width: $screen-size-pc) {
+                    width: 160px;
+                    height: 120px;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 30px 0;
+                  }
+                  span {
+                    text-align: right;
+                    font-size: 22px;
+                    font-weight: 900;
+                    @media (min-width: $screen-size-pc) {
+                      margin-top: 10px;
+                      text-align: center;
+                      display: block;
+                    }
+                  }
+                  &.entry {
+                    background: #966c16;
+                  }
+                  &.always {
+                    background: #3f2c06;
+                  }
+                }
+              }
+
+              a.change {
+                display: block;
+                margin-top: 159px;
+                text-align: right;
+                font-size: 14px;
+                font-weight: 500;
+                color: #413825;
+                @media (min-width: $screen-size-pc) {
+                  margin-top: 59px;
+                }
+              }
+            }
+
             .notice {
               margin-top: 24px;
               border-top: 1px solid #ddd;
@@ -1789,8 +1874,8 @@ body {
           div.file {
             margin-top: 40px;
             @media (min-width: $screen-size-pc) {
-                margin-top: 60px;
-              }
+              margin-top: 60px;
+            }
             .file-box {
               margin-top: 30px;
               border-top: 1px solid #ccc;
