@@ -2912,7 +2912,7 @@ body {
                           }
                         }
                       }
-                      ul.checkbox {
+                      ul.radiobox {
                         display: flex;
                         flex-wrap: wrap;
                         gap: 20px 30px;
@@ -2922,7 +2922,7 @@ body {
                           gap: 10px;
                           input {
                           }
-                          input[type='checkbox'] {
+                          input[type='radio'] {
                             width: 20px;
                             height: 20px;
                             accent-color: #e5c682;
