@@ -1557,7 +1557,6 @@ body {
               width: 470px;
             }
 
-
             label {
               display: block;
               font-size: 16px;
@@ -1589,10 +1588,9 @@ body {
               &.num03 {
                 width: calc(50% - 33px);
               }
-              &.impEmail{
+              &.impEmail {
                 width: calc(50% - 11px);
               }
-
 
               &::placeholder {
                 color: #999999;
@@ -1619,8 +1617,6 @@ body {
               margin: 25px 0;
               border-radius: 6px;
             }
-
-            
           }
 
           div.search-text {
@@ -1638,11 +1634,11 @@ body {
               width: 470px;
               font-size: 22px;
             }
-            span{
+            span {
               color: #111;
             }
+          }
         }
-      }
       }
 
       section.sign {
@@ -2039,18 +2035,15 @@ body {
                   display: inline-block;
                 }
               }
-              a {
+              div.file-list {
                 display: inline-block;
                 position: relative;
                 margin: 0 0 0 10px;
                 padding: 14px 23px 14px 38px;
                 background: #e8e8e8;
                 border-radius: 200px;
-                font-size: 15px;
-                font-weight: 300;
-                color: #376ec2;
-                text-decoration: underline;
-                &::before {
+
+                i {
                   content: '';
                   display: inline-block;
                   position: absolute;
@@ -2060,6 +2053,14 @@ body {
                   height: 14px;
                   background: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.54322 14L0 12.4568L5.47492 6.98186L0 1.54322L1.54322 0L7.01814 5.47492L12.4568 0L14 1.54322L8.52508 6.98186L14 12.4568L12.4568 14L7.01814 8.52508L1.54322 14Z' fill='%23555555'/%3E%3C/svg%3E%0A")
                     no-repeat center / 100%;
+                  font-size: 0;
+                  cursor: pointer;
+                }
+                a {
+                  font-size: 15px;
+                  font-weight: 300;
+                  color: #376ec2;
+                  text-decoration: underline;
                 }
               }
             }
@@ -3006,18 +3007,15 @@ body {
                             display: inline-block;
                           }
                         }
-                        a.file-list {
+                        div.file-list {
                           display: inline-block;
                           position: relative;
                           margin: 0 0 0 10px;
                           padding: 14px 23px 14px 38px;
                           background: #e8e8e8;
                           border-radius: 200px;
-                          font-size: 15px;
-                          font-weight: 400;
-                          color: #376ec2;
-                          text-decoration: underline;
-                          &::before {
+
+                          i {
                             content: '';
                             display: inline-block;
                             position: absolute;
@@ -3027,6 +3025,14 @@ body {
                             height: 14px;
                             background: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.54322 14L0 12.4568L5.47492 6.98186L0 1.54322L1.54322 0L7.01814 5.47492L12.4568 0L14 1.54322L8.52508 6.98186L14 12.4568L12.4568 14L7.01814 8.52508L1.54322 14Z' fill='%23555555'/%3E%3C/svg%3E%0A")
                               no-repeat center / 100%;
+                            font-size: 0;
+                            cursor: pointer;
+                          }
+                          a {
+                            font-size: 15px;
+                            font-weight: 300;
+                            color: #376ec2;
+                            text-decoration: underline;
                           }
                         }
                       }

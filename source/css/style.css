@@ -5359,19 +5359,15 @@ body div#content.sub section.sign div.container div.file .file-box span {
     display: inline-block;
   }
 }
-body div#content.sub section.sign div.container div.file .file-box a {
+body div#content.sub section.sign div.container div.file .file-box div.file-list {
   display: inline-block;
   position: relative;
   margin: 0 0 0 10px;
   padding: 14px 23px 14px 38px;
   background: #e8e8e8;
   border-radius: 200px;
-  font-size: 15px;
-  font-weight: 300;
-  color: #376ec2;
-  text-decoration: underline;
 }
-body div#content.sub section.sign div.container div.file .file-box a::before {
+body div#content.sub section.sign div.container div.file .file-box div.file-list i {
   content: "";
   display: inline-block;
   position: absolute;
@@ -5380,6 +5376,14 @@ body div#content.sub section.sign div.container div.file .file-box a::before {
   width: 14px;
   height: 14px;
   background: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.54322 14L0 12.4568L5.47492 6.98186L0 1.54322L1.54322 0L7.01814 5.47492L12.4568 0L14 1.54322L8.52508 6.98186L14 12.4568L12.4568 14L7.01814 8.52508L1.54322 14Z' fill='%23555555'/%3E%3C/svg%3E%0A") no-repeat center/100%;
+  font-size: 0;
+  cursor: pointer;
+}
+body div#content.sub section.sign div.container div.file .file-box div.file-list a {
+  font-size: 15px;
+  font-weight: 300;
+  color: #376ec2;
+  text-decoration: underline;
 }
 body div#content.sub section.sign div.container div.file ul {
   margin-top: 19px;
@@ -6342,19 +6346,15 @@ body div#content.sub section.edit div.container div.edit-write div.table > ul > 
     display: inline-block;
   }
 }
-body div#content.sub section.edit div.container div.edit-write div.table > ul > li > div div.input-box div.file-down a.file-list {
+body div#content.sub section.edit div.container div.edit-write div.table > ul > li > div div.input-box div.file-down div.file-list {
   display: inline-block;
   position: relative;
   margin: 0 0 0 10px;
   padding: 14px 23px 14px 38px;
   background: #e8e8e8;
   border-radius: 200px;
-  font-size: 15px;
-  font-weight: 400;
-  color: #376ec2;
-  text-decoration: underline;
 }
-body div#content.sub section.edit div.container div.edit-write div.table > ul > li > div div.input-box div.file-down a.file-list::before {
+body div#content.sub section.edit div.container div.edit-write div.table > ul > li > div div.input-box div.file-down div.file-list i {
   content: "";
   display: inline-block;
   position: absolute;
@@ -6363,6 +6363,14 @@ body div#content.sub section.edit div.container div.edit-write div.table > ul > 
   width: 14px;
   height: 14px;
   background: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.54322 14L0 12.4568L5.47492 6.98186L0 1.54322L1.54322 0L7.01814 5.47492L12.4568 0L14 1.54322L8.52508 6.98186L14 12.4568L12.4568 14L7.01814 8.52508L1.54322 14Z' fill='%23555555'/%3E%3C/svg%3E%0A") no-repeat center/100%;
+  font-size: 0;
+  cursor: pointer;
+}
+body div#content.sub section.edit div.container div.edit-write div.table > ul > li > div div.input-box div.file-down div.file-list a {
+  font-size: 15px;
+  font-weight: 300;
+  color: #376ec2;
+  text-decoration: underline;
 }
 body div#content.sub section.edit div.container div.edit-write div.table > ul > li > div div.input-box ul.radiobox {
   display: flex;
