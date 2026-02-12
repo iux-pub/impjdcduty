@@ -815,7 +815,45 @@ body {
               font-size: 14px;
               color: #111;
               @media (min-width: $screen-size-pc) {
-                width: 310px;
+                width: 210px;
+                font-size: 16px;
+              }
+            }
+          }
+          .board-status {
+            margin-top: 20px;
+            @media (min-width: $screen-size-pc) {
+              margin-top: 0;
+              display: flex;
+              align-items: center;
+            }
+            label {
+              font-size: 14px;
+              color: #111;
+              font-weight: 500;
+              @media (min-width: $screen-size-pc) {
+                font-size: 16px;
+              }
+            }
+            select {
+              margin: 10px 0 0 0;
+              display: block;
+              flex-shrink: 0;
+              width: 120px;
+              height: 44px;
+              padding: 10px 15px;
+              font-size: 14px;
+              color: #111;
+              border: 1px solid #ccc;
+              -moz-appearance: none; /* Firefox */
+              -webkit-appearance: none; /* Safari and Chrome */
+              appearance: none;
+              background: url("data:image/svg+xml,%3Csvg width='12' height='6' viewBox='0 0 12 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0L6 6L12 0H0Z' fill='black'/%3E%3C/svg%3E%0A")
+                no-repeat 90% center / 12px;
+              @media (min-width: $screen-size-pc) {
+                display: inline-block;
+                margin: 0 0 0 10px;
+                width: 140px;
                 font-size: 16px;
               }
             }
@@ -2345,7 +2383,45 @@ body {
               font-size: 14px;
               color: #111;
               @media (min-width: $screen-size-pc) {
-                width: 310px;
+                width: 180px;
+                font-size: 16px;
+              }
+            }
+          }
+                    .board-status {
+            margin-top: 20px;
+            @media (min-width: $screen-size-pc) {
+              margin-top: 0;
+              display: flex;
+              align-items: center;
+            }
+            label {
+              font-size: 14px;
+              color: #111;
+              font-weight: 500;
+              @media (min-width: $screen-size-pc) {
+                font-size: 16px;
+              }
+            }
+            select {
+              margin: 10px 0 0 0;
+              display: block;
+              flex-shrink: 0;
+              width: 120px;
+              height: 44px;
+              padding: 10px 15px;
+              font-size: 14px;
+              color: #111;
+              border: 1px solid #ccc;
+              -moz-appearance: none; /* Firefox */
+              -webkit-appearance: none; /* Safari and Chrome */
+              appearance: none;
+              background: url("data:image/svg+xml,%3Csvg width='12' height='6' viewBox='0 0 12 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0L6 6L12 0H0Z' fill='black'/%3E%3C/svg%3E%0A")
+                no-repeat 90% center / 12px;
+              @media (min-width: $screen-size-pc) {
+                display: inline-block;
+                margin: 0 0 0 10px;
+                width: 140px;
                 font-size: 16px;
               }
             }
