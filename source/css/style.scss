@@ -2316,14 +2316,23 @@ body {
         text-align: center;
 
         h2 {
-          margin: 30px 0;
+          margin: 30px 0 10px;
           font-size: 24px;
           font-weight: 700;
           color: #111;
           text-align: center;
           @media (min-width: $screen-size-pc) {
-            margin: 50px 0;
+            margin: 50px 0 30px;
             font-size: 28px;
+          }
+        }
+
+        p.noti {
+          font-size: 14px;
+          font-weight: 500;
+          color: #111;
+            @media (min-width: $screen-size-pc) {
+            font-size: 16px;
           }
         }
 
