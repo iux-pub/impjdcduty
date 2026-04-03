@@ -3959,9 +3959,60 @@ body div#content.main section.main-info .main-area .main-box .offer-box .offer a
 body div#content.main section.main-info .main-area .main-box .offer-box .offer a.always {
   background: #3f2c06;
 }
+body div#content.main section.main-info .main-area .main-box .offer-box .offer div.total {
+  width: 100%;
+  height: 100px;
+  background: #E0E0E0;
+  border-radius: 16px;
+  padding: 15px;
+}
+@media (min-width: 1280px) {
+  body div#content.main section.main-info .main-area .main-box .offer-box .offer div.total {
+    width: 295px;
+    height: 120px;
+    padding: 23px 17px;
+  }
+}
+body div#content.main section.main-info .main-area .main-box .offer-box .offer div.total h5 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #111;
+}
+@media (min-width: 1280px) {
+  body div#content.main section.main-info .main-area .main-box .offer-box .offer div.total h5 {
+    font-size: 19px;
+    text-align: center;
+  }
+}
+body div#content.main section.main-info .main-area .main-box .offer-box .offer div.total > div {
+  margin-top: 11px;
+  display: flex;
+  gap: 12px;
+}
+body div#content.main section.main-info .main-area .main-box .offer-box .offer div.total > div p {
+  margin: 0;
+  width: 50%;
+  padding: 8px 12px;
+  background: #F4F4F4;
+  border-radius: 16px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #111;
+}
+@media (min-width: 1280px) {
+  body div#content.main section.main-info .main-area .main-box .offer-box .offer div.total > div p {
+    font-size: 16px;
+  }
+}
+body div#content.main section.main-info .main-area .main-box .offer-box .offer div.total > div p span {
+  font-weight: 800;
+  color: #77602E;
+  float: right;
+}
 body div#content.main section.main-info .main-area .main-box .offer-box a.change {
   display: block;
-  margin-top: 159px;
+  margin-top: 39px;
   text-align: right;
   font-size: 14px;
   font-weight: 500;
@@ -3969,7 +4020,7 @@ body div#content.main section.main-info .main-area .main-box .offer-box a.change
 }
 @media (min-width: 1280px) {
   body div#content.main section.main-info .main-area .main-box .offer-box a.change {
-    margin-top: 59px;
+    margin-top: 58px;
   }
 }
 body div#content.main section.main-info .main-area .main-box .notice {
@@ -3978,7 +4029,7 @@ body div#content.main section.main-info .main-area .main-box .notice {
 }
 @media (min-width: 1280px) {
   body div#content.main section.main-info .main-area .main-box .notice {
-    margin-top: 45px;
+    margin-top: 30px;
   }
 }
 body div#content.main section.main-info .main-area .main-box .notice h3 {
@@ -6504,6 +6555,12 @@ body div#content.sub section.edit div.container div.edit-write div.table > ul > 
   font-size: 15px;
   font-weight: 500;
   color: #a68847;
+}
+body div#content.sub section.edit div.container div.edit-write div.table p.noti {
+  margin: 15px 0 0 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #d05843;
 }
 body div#content.sub section.edit div.container div.btn-set {
   display: flex;
