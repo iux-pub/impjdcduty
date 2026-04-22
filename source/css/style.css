@@ -4134,6 +4134,17 @@ body div#content.sub section.sub-board h2 {
     font-size: 28px;
   }
 }
+body div#content.sub section.sub-board p.noti {
+  margin: 0 0 20px 0;
+  color: #002dff;
+  font-size: 14px;
+  font-weight: 500;
+}
+@media (min-width: 1280px) {
+  body div#content.sub section.sub-board p.noti {
+    font-size: 17px;
+  }
+}
 body div#content.sub section.sub-board div.boardMain {
   border: 1px solid #ccc;
   border-radius: 5px;

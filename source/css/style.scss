@@ -821,6 +821,16 @@ body {
           }
         }
 
+        p.noti {
+          margin: 0 0 20px 0;
+          color: #002dff;
+          font-size: 14px;
+          font-weight: 500;
+          @media (min-width: $screen-size-pc) {
+            font-size: 17px;
+          }
+        }
+
         div.boardMain {
           border: 1px solid #ccc;
           border-radius: 5px;
